@@ -1,11 +1,7 @@
 require 'pry'
 
 def starts_with_a_vowel?(word)
-  word.each do |first_letter|
-
-binding.pry
-    word.scan(/[aeiou]/)
-  end
+  /aeiou/.match?(word, 1) 
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
