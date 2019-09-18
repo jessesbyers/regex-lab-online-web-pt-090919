@@ -1,7 +1,7 @@
 require 'pry'
 
 def starts_with_a_vowel?(word)
-  /[aeiouAEIOU]/.match?(word,1)
+  /[aeiouAEIOU]/.match?(word[1])
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
