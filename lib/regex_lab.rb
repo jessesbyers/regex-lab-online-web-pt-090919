@@ -31,7 +31,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  /a*{10}/.match(phone)
+  /a*{10}/.match?(phone)
   binding.pry
 #  /[0-9]/.match?(phone[0..9]) || /[0-9]()-/.match?(phone[0-12])
 end
