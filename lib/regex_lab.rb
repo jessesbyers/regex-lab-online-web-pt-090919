@@ -8,7 +8,8 @@ def words_starting_with_un_and_ending_with_ing(text)
   array = text.split
   new_array = []
   array.each do |word|
-    new_array << /un/.match?(word[0..1]) && /ing/.match?(word[-3..-1])
+    if /un/.match?(word[0..1]) && /ing/.match?(word[-3..-1])
+    new_array << word
       binding.pry
   end
   new_array
