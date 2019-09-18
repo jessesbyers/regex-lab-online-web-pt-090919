@@ -16,7 +16,14 @@ end
 end
 
 def words_five_letters_long(text)
-
+  array = text.split
+  new_array = []
+  array.each do |word|
+    if word.length == 5
+      new_array << word
+    end
+  end
+  new_array
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
