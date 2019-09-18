@@ -10,7 +10,6 @@ def words_starting_with_un_and_ending_with_ing(text)
   array.each do |word|
     if /un/.match?(word[0..1]) && /ing/.match?(word[-3..-1])
     new_array << word
-      binding.pry
   end
 end
   new_array
