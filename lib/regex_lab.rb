@@ -6,11 +6,12 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   array = text.split
+  new_array = []
   array.each do |word|
-    if /un/.match?(word[0..1]) && /ing/.match?(word[-3..-1])
+    new_array << /un/.match?(word[0..1]) && /ing/.match?(word[-3..-1])
       binding.pry
-    end
   end
+  new_array
 end
 
 def words_five_letters_long(text)
